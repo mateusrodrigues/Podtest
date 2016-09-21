@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta charset="-----PG_PAGECHARSET-----">
+        <title>-----PG_PAGETITLE-----</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        -----PG_METATAGS-----
+
+        -----PG_COMMONCSSLOAD-----
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css">
+        <link rel="stylesheet" href="style/site.css" asp-append-version="true" />
+
+        -----PG_JSLOAD-----
+
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-fixed-top" id="menu">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#home">
+                        <img class="brand-icon" alt="iFabric" src="~/images/icon.png">
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        -----PG_MENUHOME-----
+                        -----PG_MENUARCHIVE-----
+                        -----PG_MENUADMIN-----
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="fullpage">
+                 <div class="section">
+                    <div class="col-md-12">
+                        <img src="~/images/logo.png" id="logo" alt="iFabric" class="img-responsive center-block home-logo">
+                        <div id="dialog" title="O que fazemos?">
+                            <p>
+                                A iFabric trabalha com o desenvolvimento de soluções corporativas em nuvem
+                                personalizadas para a web moderna.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <h3 class="text-center">-----PG_PODCASTTITLE-----</h3>
+                        <h1>-----PG_PODCASTSUBTITLE-----</h1>
+                        <p>-----PG_PODCASTDESC-----</p>
+                        <a class="btn btn-warning" href="-----PG2_URLRSSFEED-----">RSS &raquo;</a>
+                        <a class="btn btn-primary" href="-----PG2_URLFORITUNES-----">iTunes &raquo;</a>
+                    </div>
+                    <div class="col-md-4 col-md-offset-4">
+                        <img data-src="images/email.png" class="img-responsive center-block email-icon">
+                              <a class="email-link" href="mailto:contato@ifabric.com.br">contato@ifabric.com.br</a>
+                        </img>
+                    </div>
+                </div>
+
+                <div class="section">
+                    -----PG_MAINBODY-----
+                </div>
+
+                <div class="section team-format">
+                    <div class="col-md-12">
+                        <h1 class="section-title">Equipe</h1>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img data-src="images/profpics/daniel.png" id="mateus-logo" alt="Daniel Moura" class="img-responsive center-block img-circle profpic" />
+                                <h3 class="text-center">Daniel Moura</h3>
+                                <img src="~/images/dotnet.png" class="techpic" />
+                            </div>
+                            <div class="col-md-4">
+                                <img data-src="images/profpics/jonathan.jpg" id="mateus-logo" alt="Jonathan Braga" class="img-responsive center-block img-circle profpic" />
+                                <h3 class="text-center">Jonathan Braga</h3>
+                                <img src="~/images/xamarin.png" class="techpic" />
+                            </div>
+                            <div class="col-md-4">
+                                <img data-src="images/profpics/mateus.jpg" id="mateus-logo" alt="Mateus Rodrigues" class="img-responsive center-block img-circle profpic" />
+                                <h3 class="text-center">Mateus Rodrigues</h3>
+                                <img src="~/images/azure.png" class="techpic" />
+                            </div>
+                            -----PG2_ADMINRIGHTBOX-----
+			                       -----PG_FREEBOX-----
+                        </div>
+                    </div>
+                </div>     
+        </div>
+        <footer class="text-center navbar-fixed-bottom">
+            <p>-----PG_FOOTER-----</p>
+        </footer>
+
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.4.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery">
+        </script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"
+                asp-fallback-src="~/lib/jquery-ui/jquery-ui.min.js">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/vendors/scrolloverflow.min.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.6/jquery.fullPage.min.js"
+                asp-fallback-src="~/lib/fullpage.js/dist/jquery.fullpage.min.js">
+        </script>
+        <script src="js/site.js"></script>
+    </body>
+</html>
